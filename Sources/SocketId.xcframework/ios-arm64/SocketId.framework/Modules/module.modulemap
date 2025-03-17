@@ -1,0 +1,6 @@
+framework module SocketId {
+  umbrella header "SocketId.h"
+  export *
+
+  module * { export * }
+}

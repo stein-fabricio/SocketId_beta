@@ -1,0 +1,442 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SocketId",
+    "printedName": "SocketId",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "MRZData",
+        "printedName": "MRZData",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRZData",
+                "printedName": "SocketId.MRZData",
+                "usr": "s:8SocketId7MRZDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8SocketId7MRZDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8SocketId7MRZDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "SocketId",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SocketId7MRZDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8SocketId7MRZDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "SocketId",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8SocketId7MRZDataV",
+        "mangledName": "$s8SocketId7MRZDataV",
+        "moduleName": "SocketId",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRZError",
+        "printedName": "MRZError",
+        "declKind": "Struct",
+        "usr": "s:8SocketId8MRZErrorV",
+        "mangledName": "$s8SocketId8MRZErrorV",
+        "moduleName": "SocketId",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SocketId",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "SocketId"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRZDelegate",
+        "printedName": "MRZDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didRecognizeMRZ",
+            "printedName": "didRecognizeMRZ(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRZData",
+                "printedName": "SocketId.MRZData",
+                "usr": "s:8SocketId7MRZDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SocketId11MRZDelegateP15didRecognizeMRZyyAA7MRZDataVF",
+            "mangledName": "$s8SocketId11MRZDelegateP15didRecognizeMRZyyAA7MRZDataVF",
+            "moduleName": "SocketId",
+            "genericSig": "<τ_0_0 where τ_0_0 : SocketId.MRZDelegate>",
+            "sugared_genericSig": "<Self where Self : SocketId.MRZDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToRecognize",
+            "printedName": "didFailToRecognize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRZError",
+                "printedName": "SocketId.MRZError",
+                "usr": "s:8SocketId8MRZErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SocketId11MRZDelegateP18didFailToRecognizeyyAA8MRZErrorVF",
+            "mangledName": "$s8SocketId11MRZDelegateP18didFailToRecognizeyyAA8MRZErrorVF",
+            "moduleName": "SocketId",
+            "genericSig": "<τ_0_0 where τ_0_0 : SocketId.MRZDelegate>",
+            "sugared_genericSig": "<Self where Self : SocketId.MRZDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8SocketId11MRZDelegateP",
+        "mangledName": "$s8SocketId11MRZDelegateP",
+        "moduleName": "SocketId",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRZ",
+        "printedName": "MRZ",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRZ",
+                "printedName": "SocketId.MRZ",
+                "usr": "s:8SocketId3MRZC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SocketId3MRZC6sharedACvpZ",
+            "mangledName": "$s8SocketId3MRZC6sharedACvpZ",
+            "moduleName": "SocketId",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRZ",
+                    "printedName": "SocketId.MRZ",
+                    "usr": "s:8SocketId3MRZC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketId3MRZC6sharedACvgZ",
+                "mangledName": "$s8SocketId3MRZC6sharedACvgZ",
+                "moduleName": "SocketId",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SocketId.MRZDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRZDelegate",
+                    "printedName": "any SocketId.MRZDelegate",
+                    "usr": "s:8SocketId11MRZDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SocketId3MRZC8delegateAA11MRZDelegate_pSgvp",
+            "mangledName": "$s8SocketId3MRZC8delegateAA11MRZDelegate_pSgvp",
+            "moduleName": "SocketId",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SocketId.MRZDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRZDelegate",
+                        "printedName": "any SocketId.MRZDelegate",
+                        "usr": "s:8SocketId11MRZDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketId3MRZC8delegateAA11MRZDelegate_pSgvg",
+                "mangledName": "$s8SocketId3MRZC8delegateAA11MRZDelegate_pSgvg",
+                "moduleName": "SocketId",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SocketId.MRZDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRZDelegate",
+                        "printedName": "any SocketId.MRZDelegate",
+                        "usr": "s:8SocketId11MRZDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketId3MRZC8delegateAA11MRZDelegate_pSgvs",
+                "mangledName": "$s8SocketId3MRZC8delegateAA11MRZDelegate_pSgvs",
+                "moduleName": "SocketId",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SocketId3MRZC8delegateAA11MRZDelegate_pSgvM",
+                "mangledName": "$s8SocketId3MRZC8delegateAA11MRZDelegate_pSgvM",
+                "moduleName": "SocketId",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8SocketId3MRZC",
+        "mangledName": "$s8SocketId3MRZC",
+        "moduleName": "SocketId",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
