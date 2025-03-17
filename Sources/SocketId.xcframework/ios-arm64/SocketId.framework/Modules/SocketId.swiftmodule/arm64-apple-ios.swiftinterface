@@ -9,10 +9,21 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct MRZData : Swift.Codable {
+  public let documentType: Swift.String
+  public let issuingCountry: Swift.String
+  public let documentNumber: Swift.String
+  public let surname: Swift.String
+  public let givenNames: Swift.String
+  public let nationality: Swift.String
+  public let birthDate: Swift.String
+  public let gender: Swift.String
+  public let expiryDate: Swift.String
+  public let rawMRZ: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct MRZError : Swift.Error {
+  public let message: Swift.String
 }
 public protocol MRZDelegate {
   func didRecognizeMRZ(_ mrzData: SocketId.MRZData)
@@ -21,5 +32,6 @@ public protocol MRZDelegate {
 @_hasMissingDesignatedInitializers public class MRZ {
   public static let shared: SocketId.MRZ
   public var delegate: (any SocketId.MRZDelegate)?
+  public func recognizeMRZ(in image: UIKit.UIImage) async throws
   @objc deinit
 }
